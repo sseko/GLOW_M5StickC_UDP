@@ -121,3 +121,6 @@ GLOWは最初にグループIDとデバイスIDを設定する必要がありま
 
 https://youtu.be/-QoyVQH0mNI
 
+## GLOWについての詳細
+
+https://www.yumecloud.net/glow/
