@@ -66,6 +66,28 @@ if __name__ == '__main__':
   main()
 </pre>
 
+##### Processingで通信する場合
+
+<pre>
+import processing.serial.*;
+ 
+Serial Port;
+String Text = "";
+ 
+void setup() {
+  size(200, 200);
+  background(0, 0, 0);
+  Port = new Serial(this, "COM7", 115200);
+}
+
+ 
+void draw() {
+  Port.write("1,2,3,0x1c7\n");
+  delay(5000);
+  Port.write("0,2,3,0\n");
+  delay(5000);
+}
+</pre>
 
 UDPでもシリアルでも基本的に以下のフォーマットで送信します。
 
